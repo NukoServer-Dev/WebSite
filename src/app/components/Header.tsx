@@ -7,9 +7,11 @@ import { House, LayoutGrid } from "lucide-react";
 
 export default function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [isMobile, setIsMobile] = useState(false);
 
     useEffect(() => {
         const isMobile = window.matchMedia("(max-width: 767px)").matches;
+        setIsMobile(isMobile);
 
         if (isMenuOpen && isMobile) {
             document.body.style.overflow = "hidden";
@@ -35,6 +37,19 @@ export default function Header() {
         return () => {
             mediaQuery.removeEventListener("change", updateLayout);
             document.body.style.paddingRight = "";
+        };
+    }, []);
+
+    useEffect(() => {
+        const handleResize = () => {
+            const isMobile = window.matchMedia("(max-width: 767px)").matches;
+            setIsMobile(isMobile);
+        };
+
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
         };
     }, []);
 
@@ -74,7 +89,7 @@ export default function Header() {
                         </div>
                     </a>
 
-                    <button
+                    {isMobile ? <button
                         type="button"
                         className="menu-toggle md:hidden"
                         onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -105,7 +120,7 @@ export default function Header() {
                                 <path d="M4 7h16M4 12h16M4 17h16" />
                             </svg>
                         )}
-                    </button>
+                    </button> : ""}
                 </div>
             </header>
 
