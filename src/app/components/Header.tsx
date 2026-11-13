@@ -8,7 +8,6 @@ import { useState, useEffect } from "react";
 export default function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-    // スマホでメニューを開いている間は背景スクロールを禁止
     useEffect(() => {
         const isMobile = window.matchMedia("(max-width: 767px)").matches;
 
@@ -21,27 +20,28 @@ export default function Header() {
         };
     }, [isMenuOpen]);
 
-    // PCに切り替えた場合はメニュー状態をリセット
     useEffect(() => {
         const mediaQuery = window.matchMedia("(min-width: 768px)");
 
-        const handleResize = (event: MediaQueryListEvent) => {
-            if (event.matches) {
-                setIsMenuOpen(false);
-            }
+        const updateLayout = () => {
+            document.body.style.paddingRight = mediaQuery.matches
+                ? "16rem"
+                : "";
         };
 
-        mediaQuery.addEventListener("change", handleResize);
+        updateLayout();
+        mediaQuery.addEventListener("change", updateLayout);
 
         return () => {
-            mediaQuery.removeEventListener("change", handleResize);
+            mediaQuery.removeEventListener("change", updateLayout);
+            document.body.style.paddingRight = "";
         };
     }, []);
 
     return (
         <>
             {/* ヘッダー */}
-            <header className="fixed top-0 left-0 w-full z-[60]">
+            <header className="fixed top-0 left-0 w-full z-[60] bg-gray-800">
                 <div className="flex justify-between items-center p-3">
                     <div className="flex items-center">
                         <Image
@@ -85,6 +85,7 @@ export default function Header() {
                     shadow-xl
                     overflow-y-auto overscroll-contain
                     transition-transform duration-300 ease-in-out
+                    bg-gray-800
 
                     ${isMenuOpen ? "translate-x-0" : "translate-x-full"}
 
@@ -100,8 +101,13 @@ export default function Header() {
 
                     <ul className="space-y-4">
                         <li>
-                            <a href="/" className="block p-3 hover:bg-gray-100 rounded">
+                            <a href="/" className="block p-3 hover:bg-gray-500 rounded">
                                 ホーム
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/services" className="block p-3 hover:bg-gray-500 rounded">
+                                サービス一覧
                             </a>
                         </li>
                     </ul>

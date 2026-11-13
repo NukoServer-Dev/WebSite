@@ -1,0 +1,32 @@
+{
+    "categorys": [
+        {
+            "name": "Webサイト",
+            "services": [
+                {
+                    "name": "公式サイト",
+                    "description": "Misskeyで飯テロ画像を投稿します。",
+                    "icon_url": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjL93JKNYZP_h1LPBNAywxDSesHDA6WP9OrFJ-ho-XHv3H1_VXz363dTJNRpWYQPxx7433WqBsHlMcqiTBE0XoMLJFPUXKxAqKhzaPPHH8t8p_vGzaHtPxgmbGsFIhOm-CL9AnuMke6kiYS/s800/building_house5.png",
+                    "url": "/"
+                }
+            ]
+        },
+        {
+            "name": "Misskey関連",
+            "services": [
+                {
+                    "name": "AI飯テロBot",
+                    "description": "Misskeyで飯テロ画像を投稿します。",
+                    "icon_url": "https://proxy.misskeyusercontent.jp/avatar/media.misskeyusercontent.jp%2Fio%2F7aa27447-ef04-431b-8f36-6073711211cc.jpg?avatar=1",
+                    "url": "https://misskey.io/@meshiterobot"
+                },
+                {
+                    "name": "ひろゆき名言Bot",
+                    "description": "Misskeyでひろゆきの名言を投稿します。",
+                    "icon_url": "https://proxy.misskeyusercontent.jp/avatar/media.misskeyusercontent.jp%2Fio%2F02b311af-e310-40a2-aa83-58dc118eca2f.png?avatar=1",
+                    "url": "https://misskey.io/@hiroyuki_bot"
+                }
+            ]
+        }
+    ]
+}
