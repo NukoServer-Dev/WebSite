@@ -1,9 +1,9 @@
-
 "use client";
 
 import Image from "next/image";
 import Icon from "@/public/icon.png";
 import { useState, useEffect } from "react";
+import { House, LayoutGrid } from "lucide-react";
 
 export default function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -38,79 +38,142 @@ export default function Header() {
         };
     }, []);
 
+    useEffect(() => {
+        const handleKeyDown = (event: KeyboardEvent) => {
+            if (event.key === "Escape") {
+                setIsMenuOpen(false);
+            }
+        };
+
+        window.addEventListener("keydown", handleKeyDown);
+
+        return () => {
+            window.removeEventListener("keydown", handleKeyDown);
+        };
+    }, []);
+
     return (
         <>
-            {/* ヘッダー */}
-            <header className="fixed top-0 left-0 w-full z-[60] bg-gray-800">
-                <div className="flex justify-between items-center p-3">
-                    <div className="flex items-center">
+            <header className="site-header fixed top-0 left-0 w-full z-[60]">
+                <div className="h-16 flex items-center justify-between px-4 md:px-6">
+
+                    <a
+                        href="/"
+                        className="flex items-center gap-3 group"
+                    >
                         <Image
                             src={Icon}
-                            alt="Icon"
-                            className="h-10 w-10 ml-5"
+                            alt="NukoServer"
+                            className="h-10 w-10 object-contain transition-transform duration-200 group-hover:scale-105"
                         />
-                        <h1 className="text-3xl m-3">NukoServer</h1>
-                    </div>
 
-                    {/* スマホ用メニューボタン */}
+                        <div className="flex flex-col">
+                            <h1 className="text-xl md:text-2xl font-bold tracking-tight leading-tight">
+                                NukoServer
+                            </h1>
+                        </div>
+                    </a>
+
                     <button
-                        className="md:hidden border px-3 py-2 rounded-sm mr-3"
+                        type="button"
+                        className="menu-toggle md:hidden"
                         onClick={() => setIsMenuOpen(!isMenuOpen)}
-                        aria-label="メニューを開閉"
+                        aria-label={isMenuOpen ? "メニューを閉じる" : "メニューを開く"}
                         aria-expanded={isMenuOpen}
+                        aria-controls="site-navigation"
                     >
-                        {isMenuOpen ? "×" : "≡"}
+                        {isMenuOpen ? (
+                            <svg
+                                viewBox="0 0 24 24"
+                                className="w-6 h-6"
+                                fill="none"
+                                stroke="currentColor"
+                                strokeWidth="2"
+                                strokeLinecap="round"
+                            >
+                                <path d="M18 6 6 18M6 6l12 12" />
+                            </svg>
+                        ) : (
+                            <svg
+                                viewBox="0 0 24 24"
+                                className="w-6 h-6"
+                                fill="none"
+                                stroke="currentColor"
+                                strokeWidth="2"
+                                strokeLinecap="round"
+                            >
+                                <path d="M4 7h16M4 12h16M4 17h16" />
+                            </svg>
+                        )}
                     </button>
                 </div>
             </header>
 
-            {/* スマホ用オーバーレイ */}
             <div
                 className={`
-                    fixed inset-0 top-16 z-40 bg-black/50 md:hidden
+                    mobile-overlay fixed inset-0 top-16 z-40 md:hidden
                     transition-opacity duration-300
                     ${isMenuOpen
                         ? "opacity-100"
                         : "opacity-0 pointer-events-none"}
                 `}
                 onClick={() => setIsMenuOpen(false)}
+                aria-hidden="true"
             />
 
-            {/* メニュー */}
             <nav
+                id="site-navigation"
+                aria-label="メインメニュー"
                 className={`
-                    fixed top-16 right-0 z-50
+                    site-nav fixed top-16 right-0 z-50
                     h-[calc(100dvh-4rem)]
                     w-72 max-w-[85vw]
-                    shadow-xl
                     overflow-y-auto overscroll-contain
                     transition-transform duration-300 ease-in-out
-                    bg-gray-800
 
                     ${isMenuOpen ? "translate-x-0" : "translate-x-full"}
 
                     md:translate-x-0
                     md:w-64 md:max-w-none
-                    md:shadow-none
                 `}
             >
                 <div className="p-5">
-                    <h2 className="text-xl font-bold mb-5">
-                        NukoServer
-                    </h2>
+                    <div className="mb-7">
+                        <h2 className="text-xl font-bold">
+                            メニュー
+                        </h2>
+                    </div>
 
-                    <ul className="space-y-4">
+                    <ul className="space-y-2">
                         <li>
-                            <a href="/" className="block p-3 hover:bg-gray-500 rounded">
-                                ホーム
+                            <a
+                                href="/"
+                                className="nav-link"
+                                onClick={() => setIsMenuOpen(false)}
+                            >
+                                <House />
+                                <span>ホーム</span>
                             </a>
                         </li>
+
                         <li>
-                            <a href="/services" className="block p-3 hover:bg-gray-500 rounded">
-                                サービス一覧
+                            <a
+                                href="/services"
+                                className="nav-link"
+                                onClick={() => setIsMenuOpen(false)}
+                            >
+                                <LayoutGrid />
+                                <span>サービス一覧</span>
                             </a>
                         </li>
                     </ul>
+
+                    <div className="nav-footer mt-10 pt-5">
+                        <p className="header-muted text-xs">
+                            Copyright© 2026<br/>
+                            NukoServer All rights reserved.
+                        </p>
+                    </div>
                 </div>
             </nav>
         </>

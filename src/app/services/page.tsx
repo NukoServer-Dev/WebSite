@@ -13,9 +13,7 @@ export default function Services() {
     }
 
     useEffect(() => {
-        setTimeout(() => {
-            loadServices();
-        }, 500)
+        loadServices();
     }, [])
 
     return (
@@ -30,7 +28,7 @@ export default function Services() {
                         <div className="flex flex-wrap gap-4">
                             {category.services.map((service: any) => (
                                 <a href={service.url} key={service.name}>
-                                    <div className="text-white p-4">
+                                    <div className="p-4">
                                         <h3 className="text-2xl">{service.name}</h3>
                                         <p className="border-b mb-3">{service.description}</p>
                                         <img className="h-30 w-30 rounded-full" src={service.icon_url} />
