@@ -5,9 +5,15 @@
             "services": [
                 {
                     "name": "公式サイト",
-                    "description": "Misskeyで飯テロ画像を投稿します。",
+                    "description": "サービス紹介などを行っている公式サイト",
                     "icon_url": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjL93JKNYZP_h1LPBNAywxDSesHDA6WP9OrFJ-ho-XHv3H1_VXz363dTJNRpWYQPxx7433WqBsHlMcqiTBE0XoMLJFPUXKxAqKhzaPPHH8t8p_vGzaHtPxgmbGsFIhOm-CL9AnuMke6kiYS/s800/building_house5.png",
                     "url": "/"
+                },
+                {
+                    "name": "公式ブログ",
+                    "description": "公式のブログです。",
+                    "icon_url": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiZq_OreB5JJPfX0rzm8rSA6MmyfsMDFbRZAogJC5HP0qSCPm-5V82-GbXxqmIgSwU55euIFPf4uJD36yyJHa9YMqYdPJNzKjASaxelVdEQChIZQ98s50YkLJkEQ6uLwCOvZFwum-OoFkI/s800/website_blog.png",
+                    "url": "https://nuko-server.blogspot.com/"
                 }
             ]
         },
