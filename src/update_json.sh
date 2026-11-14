@@ -1,0 +1,1 @@
+cp app/data/services.json .next/standalone/app/data/services.json
