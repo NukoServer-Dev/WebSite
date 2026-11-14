@@ -44,6 +44,17 @@
                     "url": "https://misskey.io/@hiroyuki_bot"
                 }
             ]
+        },
+        {
+            "name": "API",
+            "services": [
+                {
+                    "name": "TwitterIntentAPI",
+                    "description": "TwitterのインテントURLを生成するAPIです。",
+                    "icon_url": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjEB932hVgaKyqyxeyF06KSDpf1rdTcb0ThAPck3ITd2-YlUkv1lEg5LP31-hrbM803OSOik5fgjSWVU3rIvq137LvTet6dAKjoIZk_cMvIHitiYuLmmFES0lRBe7xeD2cUIyOkadngF1IH/s800/bird_aoitori_bluebird.png",
+                    "url": "https://twitter-intent-api.nuko-server.xyz/docs"
+                }
+            ]
         }
     ]
 }
