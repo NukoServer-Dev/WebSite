@@ -18,6 +18,17 @@
             ]
         },
         {
+            "name": "Webゲーム",
+            "services": [
+                {
+                    "name": "音ゲーメーカー",
+                    "description": "音ゲーの譜面を簡単に作成して遊べるゲーム",
+                    "icon_url": "https://music-game.nuko-server.xyz/static/icon.png",
+                    "url": "https://music-game.nuko-server.xyz"
+                }
+            ]
+        },
+        {
             "name": "Misskey関連",
             "services": [
                 {
