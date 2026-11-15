@@ -29,6 +29,17 @@
             ]
         },
         {
+            "name": "Fluxer関連",
+            "services": [
+                {
+                    "name": "NukoBot@Fluxer",
+                    "description": "Fluxer版のNukoBot。便利な機能が使えます。",
+                    "icon_url": "https://fluxerusercontent.com/avatars/1547950776435867649/8918ed05.webp",
+                    "url": "https://web.canary.fluxer.app/oauth2/authorize?client_id=1547950776435867649&scope=bot&permissions=8"
+                }
+            ]
+        },
+        {
             "name": "Misskey関連",
             "services": [
                 {
@@ -58,7 +69,7 @@
                     "name": "TodayAPI",
                     "description": "毎日の情報を返してくれるAPIです。",
                     "icon_url": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgBjPgDNfMCzpVuXEe1uhmD5PHdFFLXzjRmmRtUE2TPs3EjhenoK7QyVQmQUcigcBy_UqmcsS5mGSoKXpJaBKwvCU26p2I0AxzoYegOhSYsFGCCv-0z8iuG0IfwaSfCtShjj0OiIAfV7yQ/s800/calender_himekuri.png",
-                    "url": "https://today-api.nuko-server.xyz/today/0101.json"
+                    "url": "https://today-api.nuko-server.xyz/docs"
                 }
             ]
         }
