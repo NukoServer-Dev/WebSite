@@ -31,7 +31,7 @@ export default function Services() {
                                     <div className="p-4">
                                         <h3 className="text-2xl">{service.name}</h3>
                                         <p className="border-b mb-3">{service.description}</p>
-                                        <img className="h-30 w-30 rounded-full" src={service.icon_url} />
+                                        <img className="h-30 w-30 rounded-3xl" src={service.icon_url} />
                                     </div>
                                 </a>
                             ))}
