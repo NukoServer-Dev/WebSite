@@ -84,7 +84,7 @@ export default function Header() {
 
                         <div className="flex flex-col">
                             <h1 className="text-xl md:text-2xl font-bold tracking-tight leading-tight">
-                                NukoServer
+                                ぬこぬこサーバー
                             </h1>
                         </div>
                     </a>

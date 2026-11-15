@@ -1,0 +1,15 @@
+{
+    "categorys": [
+        {
+            "name": "👋管理者のおすすめ",
+            "services": [
+                {
+                    "name": "公式ブログ",
+                    "emoji": "📖",
+                    "description": "公式のブログを作ってみました！",
+                    "url": "https://nuko-server.blogspot.com/"
+                }
+            ]
+        }
+    ]
+}
