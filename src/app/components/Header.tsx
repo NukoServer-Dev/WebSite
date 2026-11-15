@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Icon from "@/public/icon.png";
 import { useState, useEffect } from "react";
-import { House, LayoutGrid } from "lucide-react";
+import { House, LayoutGrid, Server, User2 } from "lucide-react";
 
 export default function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -179,6 +179,28 @@ export default function Header() {
                             >
                                 <LayoutGrid />
                                 <span>サービス一覧</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                                href="/members"
+                                className="nav-link"
+                                onClick={() => setIsMenuOpen(false)}
+                            >
+                                <User2 />
+                                <span>参加者一覧</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                                href="https://status.nuko-server.xyz/status"
+                                className="nav-link"
+                                onClick={() => setIsMenuOpen(false)}
+                            >
+                                <Server />
+                                <span>ステータス</span>
                             </a>
                         </li>
                     </ul>

@@ -1,0 +1,15 @@
+{
+    "categorys": [
+        {
+            "name": "オーナー",
+            "services": [
+                {
+                    "name": "サメちゃん（ろゆまな）",
+                    "description": "ぬこぬこサーバーを最初に立ち上げました。",
+                    "icon_url": "/members/owner.webp",
+                    "url": "/"
+                }
+            ]
+        }
+    ]
+}

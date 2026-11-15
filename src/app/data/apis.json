@@ -1,0 +1,26 @@
+{
+    "categorys": [
+        {
+            "name": "Twitter（X）関連",
+            "services": [
+                {
+                    "name": "TwitterIntentAPI",
+                    "description": "TwitterのインテントURLを生成するAPIです。",
+                    "icon_url": "/services/twitter.png",
+                    "url": "https://twitter-intent-api.nuko-server.xyz/docs"
+                }
+            ]
+        },
+        {
+            "name": "検索や情報関連",
+            "services": [
+                {
+                    "name": "TodayAPI",
+                    "description": "毎日の情報を返してくれるAPIです。",
+                    "icon_url": "/services/today.png",
+                    "url": "https://today-api.nuko-server.xyz/docs"
+                }
+            ]
+        }
+    ]
+}
