@@ -53,6 +53,12 @@
                     "description": "TwitterのインテントURLを生成するAPIです。",
                     "icon_url": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjEB932hVgaKyqyxeyF06KSDpf1rdTcb0ThAPck3ITd2-YlUkv1lEg5LP31-hrbM803OSOik5fgjSWVU3rIvq137LvTet6dAKjoIZk_cMvIHitiYuLmmFES0lRBe7xeD2cUIyOkadngF1IH/s800/bird_aoitori_bluebird.png",
                     "url": "https://twitter-intent-api.nuko-server.xyz/docs"
+                },
+                {
+                    "name": "TodayAPI",
+                    "description": "毎日の情報を返してくれるAPIです。",
+                    "icon_url": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgBjPgDNfMCzpVuXEe1uhmD5PHdFFLXzjRmmRtUE2TPs3EjhenoK7QyVQmQUcigcBy_UqmcsS5mGSoKXpJaBKwvCU26p2I0AxzoYegOhSYsFGCCv-0z8iuG0IfwaSfCtShjj0OiIAfV7yQ/s800/calender_himekuri.png",
+                    "url": "https://today-api.nuko-server.xyz/today/0101.json"
                 }
             ]
         }
