@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 
-export default function Services() {
+export default function Members() {
     const [categorys, setCategorys] = useState<any[]>([]);
 
     async function loadServices() {
