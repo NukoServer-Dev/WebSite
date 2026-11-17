@@ -57,6 +57,17 @@
             ]
         },
         {
+            "name": "Discord関連",
+            "services": [
+                {
+                    "name": "NukoBot@Discord",
+                    "description": "Discord版のNukoBot。便利な機能が使えます。",
+                    "icon_url": "/services/nukobot-fluxer.webp",
+                    "url": "https://canary.discord.com/oauth2/authorize?client_id=1572066125611671662"
+                }
+            ]
+        },
+        {
             "name": "Misskey関連",
             "services": [
                 {
