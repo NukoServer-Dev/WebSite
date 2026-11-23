@@ -10,6 +10,29 @@
                     "url": "https://x.com/nekoroyu123"
                 }
             ]
+        },
+        {
+            "name": "管理者",
+            "services": [
+                {
+                    "name": "hamusata",
+                    "description": "DiscordBotの開発を手伝ってくれました。",
+                    "icon_url": "https://cdn.discordapp.com/avatars/1216587039252938772/fa74cb2499cf8e1b76babc057bcad15d.webp",
+                    "url": "https://canary.discord.com/users/1216587039252938772"
+                },
+                {
+                    "name": "さーふぉっくす🦊",
+                    "description": "サーバーの運営を手伝ってくれました。",
+                    "icon_url": "https://cdn.discordapp.com/avatars/1317798664290172938/2b3b43baa050dbf43ffca094faefb6f3.webp",
+                    "url": "https://canary.discord.com/users/1317798664290172938"
+                },
+                {
+                    "name": "shishen575",
+                    "description": "Minecraft系を手伝ってくれました。",
+                    "icon_url": "https://cdn.discordapp.com/avatars/1084318050976796832/cfcb89839b92f2335205b1a7ef0958ad.webp",
+                    "url": "https://canary.discord.com/users/1084318050976796832"
+                }
+            ]
         }
     ]
 }
