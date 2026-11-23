@@ -8,3 +8,11 @@
 ## サービスを追加方法する
 1. data/services.jsonにサービス情報を追加する
 2. npm run build後にstart
+
+## APIを追加する
+1. data/apis.jsonにサービス情報を追加する
+2. npm run build後にstart
+
+## メンバーを追加する
+1. data/members.jsonにサービス情報を追加する
+2. npm run build後にstart
