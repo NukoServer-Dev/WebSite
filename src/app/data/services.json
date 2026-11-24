@@ -64,6 +64,12 @@
                     "description": "Discord版のNukoBot。便利な機能が使えます。",
                     "icon_url": "/services/nukobot-fluxer.webp",
                     "url": "https://canary.discord.com/oauth2/authorize?client_id=1572066125611671662"
+                },
+                {
+                    "name": "URL Cleaner",
+                    "description": "URLを自動で短く、見やすくします。",
+                    "icon_url": "https://cdn.discordapp.com/avatars/1572540592838418572/51543973fa1ce27a5cd03d477a932979.png",
+                    "url": "https://canary.discord.com/oauth2/authorize?client_id=1572540592838418572"
                 }
             ]
         },
