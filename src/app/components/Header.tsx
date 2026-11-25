@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Icon from "@/public/icon.png";
 import { useState, useEffect } from "react";
-import { House, LayoutGrid, Server, User2 } from "lucide-react";
+import { House, LayoutGrid, Link, Server, User2 } from "lucide-react";
 
 export default function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -190,6 +190,17 @@ export default function Header() {
                             >
                                 <User2 />
                                 <span>参加者一覧</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                                href="/links"
+                                className="nav-link"
+                                onClick={() => setIsMenuOpen(false)}
+                            >
+                                <Link />
+                                <span>相互リンク一覧</span>
                             </a>
                         </li>
 

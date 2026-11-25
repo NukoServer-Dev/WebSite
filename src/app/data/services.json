@@ -70,6 +70,12 @@
                     "description": "URLを自動で短く、見やすくします。",
                     "icon_url": "https://cdn.discordapp.com/avatars/1572540592838418572/51543973fa1ce27a5cd03d477a932979.png",
                     "url": "https://canary.discord.com/oauth2/authorize?client_id=1572540592838418572"
+                },
+                {
+                    "name": "PurgeMe",
+                    "description": "自分のメッセージをすぐに削除できます。",
+                    "icon_url": "https://cdn.discordapp.com/avatars/1574720330579181608/0a3cc47acb646ee784d31631d4b94d88.png",
+                    "url": "https://canary.discord.com/oauth2/authorize?client_id=1574720330579181608"
                 }
             ]
         },
