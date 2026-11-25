@@ -57,7 +57,18 @@
             ]
         },
         {
-            "name": "Discord関連",
+            "name": "Discordサーバー",
+            "services": [
+                {
+                    "name": "ぬこぬこサーバー",
+                    "description": "開発などを行っている技術サーバー",
+                    "icon_url": "https://cdn.discordapp.com/icons/1570290733691441254/b6ecaf2f9932fd3c8fb4691cd8b151d7.jpg",
+                    "url": "https://discord.gg/adEJ7SfJUN"
+                }
+            ]
+        },
+        {
+            "name": "DiscordBot",
             "services": [
                 {
                     "name": "NukoBot@Discord",
