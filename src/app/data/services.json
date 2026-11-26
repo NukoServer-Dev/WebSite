@@ -46,7 +46,7 @@
                 {
                     "name": "テキスト共有",
                     "description": "テキストを簡単に共有できます。",
-                    "icon_url": "https://txt.nuk.red/icon.png",
+                    "icon_url": "/services/textToLink.png",
                     "url": "https://txt.nuk.red"
                 }
             ]
