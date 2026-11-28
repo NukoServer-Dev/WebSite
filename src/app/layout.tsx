@@ -4,6 +4,8 @@ import "./globals.css";
 
 import Header from "./components/Header";
 
+import { GoogleAnalytics } from '@next/third-parties/google'
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -30,6 +32,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <div className="mt-20 p-5 ml-3 md:mr-64">
           {children}
         </div>
+        {process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID && (
+          <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID} />
+        )}
       </body>
     </html>
   );
