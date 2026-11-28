@@ -92,7 +92,7 @@
                     "name": "PurgeMe",
                     "description": "自分のメッセージをすぐに削除できます。",
                     "icon_url": "https://cdn.discordapp.com/avatars/1574720330579181608/0a3cc47acb646ee784d31631d4b94d88.png",
-                    "url": "https://canary.discord.com/oauth2/authorize?client_id=1574720330579181608"
+                    "url": "https://purge.nuko-server.xyz/"
                 }
             ]
         },
